@@ -22,7 +22,7 @@ get '/' do
     rescue ArgumentError
     end
     ice.summary = fpe['title']
-    ice.description = fpe['desc']
+    ice.description = fpe['long_desc']
     ice.location = fpe['place']
     cal.add_event ice
   end
